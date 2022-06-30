@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>A stylish UI Kit</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20220630175220">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<nav class="header__navbar">
+					<ul class="header__list menu" id="menu">
+						<li><a href="#"><picture><source srcset="img/logos/logo.webp" type="image/webp"><img class="header__logo" src="img/logos/logo.png" alt="Zero design"></picture></a></li>
+						<li class="header__item"><a href="#">Landing</a></li>
+						<li class="header__item"><a href="#">Company</a></li>
+						<li class="header__item"><a href="#">CMS Pages</a></li>
+						<li class="header__item"><a href="#">Utility</a></li>
+					</ul>
+					<ul class="header__list">
+						<li>
+							<button class="button">$129 Buy Now</button>
+						</li>
+						<li>
+							<svg class="header__ico">
+								<use xlink:href="img/symbol/sprite.svg#ico-search"></use>
+							</svg>
+						</li>
+						<li>
+							<svg class="header__ico">
+								<use xlink:href="img/symbol/sprite.svg#ico-basket"></use>
+							</svg>
+						</li>
+					</ul>
+					<div class="hamb">
+						<div class="hamb__field" id="hamb"><span class="bar"></span><span class="bar"></span><span class="bar"></span>
+						</div>
+					</div>
+				</nav>
+				<div class="popup" id="popup"></div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="section-main">
+				<div class="section-main__container">
+					<div class="section-main__content">
+						<span class="fixed">Design addicted</span>
+						<h1 class="h1">A stylish UI Kit <span class="small-text">for all web creatives</span></h1>
+						<p class="description">
+							Zero is a Webflow Ecommerce and CMS UI kit including several carefully designed page layouts.
+						</p>
+						<ul class="section-main__list">
+							<li class="section-main__item">
+								<svg>
+									<use xlink:href="img/symbol/sprite.svg#ico-smooth"></use>
+								</svg>
+								<span class="section-main__slogan">smooth <br> interactions</span>
+							</li>
+							<li class="section-main__item">
+								<svg>
+									<use xlink:href="img/symbol/sprite.svg#ico-many"></use>
+								</svg>
+								<span class="section-main__slogan">many <br> page layouts</span>
+							</li>
+							<li class="section-main__item">
+								<svg>
+									<use xlink:href="img/symbol/sprite.svg#ico-smooth"></use>
+								</svg>
+								<span class="section-main__slogan">fully <br> responsive</span>
+							</li>
+							<li class="section-main__item">
+								<svg>
+									<use xlink:href="img/symbol/sprite.svg#ico-fast"></use>
+								</svg>
+								<span class="section-main__slogan">fast <br> customization</span>
+							</li>
+						</ul>
+					</div>
+					<picture><source srcset="img/banners/main-banner.webp" type="image/webp"><img src="img/banners/main-banner.png" alt="" aria-hidden="true"></picture>
+				</div>
+			</section>
+
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20220630175220"></script>
+</body>
+
+</html>
