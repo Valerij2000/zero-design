@@ -75,7 +75,7 @@
     };
   function s(e) {
     setTimeout(() => {
-      window.FLS && console.log(e);
+      window.FLS;
     }, 0);
   }
   function i(e, t) {
@@ -122,14 +122,14 @@
   let r = (e, t = !1, o = 500, i = 0) => {
     const r = document.querySelector(e);
     if (r) {
-      let a = "",
-        l = 0;
+      let e = "",
+        a = 0;
       t &&
-        ((a = "header.header"), (l = document.querySelector(a).offsetHeight));
-      let c = {
+        ((e = "header.header"), (a = document.querySelector(e).offsetHeight));
+      let l = {
         speedAsDuration: !0,
         speed: o,
-        header: a,
+        header: e,
         offset: i,
         easing: "easeOutQuad",
       };
@@ -138,13 +138,13 @@
           (n(), document.documentElement.classList.remove("menu-open")),
         "undefined" != typeof SmoothScroll)
       )
-        new SmoothScroll().animateScroll(r, "", c);
+        new SmoothScroll().animateScroll(r, "", l);
       else {
         let e = r.getBoundingClientRect().top + scrollY;
-        window.scrollTo({ top: l ? e - l : e, behavior: "smooth" });
+        window.scrollTo({ top: a ? e - a : e, behavior: "smooth" });
       }
-      s(`[gotoBlock]: Юхуу...едем к ${e}`);
-    } else s(`[gotoBlock]: Ой ой..Такого блока нет на странице: ${e}`);
+      s();
+    } else s();
   };
   let a = !1;
   setTimeout(() => {
