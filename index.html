@@ -6,7 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220630175220">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20220701145211" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220701145211">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,11 +19,11 @@
 			<div class="header__container">
 				<nav class="header__navbar">
 					<ul class="header__list menu" id="menu">
-						<li><a href="#"><picture><source srcset="img/logos/logo.webp" type="image/webp"><img class="header__logo" src="img/logos/logo.png" alt="Zero design"></picture></a></li>
-						<li class="header__item"><a href="#">Landing</a></li>
-						<li class="header__item"><a href="#">Company</a></li>
-						<li class="header__item"><a href="#">CMS Pages</a></li>
-						<li class="header__item"><a href="#">Utility</a></li>
+						<li><a href="index.html"><picture><source srcset="img/logos/logo.webp" type="image/webp"><img class="header__logo" src="img/logos/logo.png" alt="Zero design"></picture></a></li>
+						<li class="header__item"><a href="#" data-goto=".landing">Landing</a></li>
+						<li class="header__item"><a href="#" data-goto=".company">Company</a></li>
+						<li class="header__item"><a href="#" data-goto=".cms">CMS Pages</a></li>
+						<li class="header__item"><a href="#" data-goto=".utility">Utility</a></li>
 					</ul>
 					<ul class="header__list">
 						<li>
@@ -52,49 +53,294 @@
 				<div class="section-main__container">
 					<div class="section-main__content">
 						<span class="fixed">Design addicted</span>
-						<h1 class="h1">A stylish UI Kit <span class="small-text">for all web creatives</span></h1>
+						<h1 class="h1">A stylish UI Kit <br> <span class="small-text">for all web creatives</span></h1>
 						<p class="description">
 							Zero is a Webflow Ecommerce and CMS UI kit including several carefully designed page layouts.
 						</p>
 						<ul class="section-main__list">
 							<li class="section-main__item">
-								<svg>
+								<svg class="section-main__ico">
 									<use xlink:href="img/symbol/sprite.svg#ico-smooth"></use>
 								</svg>
 								<span class="section-main__slogan">smooth <br> interactions</span>
 							</li>
 							<li class="section-main__item">
-								<svg>
+								<svg class="section-main__ico">
 									<use xlink:href="img/symbol/sprite.svg#ico-many"></use>
 								</svg>
 								<span class="section-main__slogan">many <br> page layouts</span>
 							</li>
 							<li class="section-main__item">
-								<svg>
+								<svg class="section-main__ico">
 									<use xlink:href="img/symbol/sprite.svg#ico-smooth"></use>
 								</svg>
 								<span class="section-main__slogan">fully <br> responsive</span>
 							</li>
 							<li class="section-main__item">
-								<svg>
+								<svg class="section-main__ico">
 									<use xlink:href="img/symbol/sprite.svg#ico-fast"></use>
 								</svg>
 								<span class="section-main__slogan">fast <br> customization</span>
 							</li>
 						</ul>
 					</div>
+				</div>
+				<div class="section-main__image-ibg">
 					<picture><source srcset="img/banners/main-banner.webp" type="image/webp"><img src="img/banners/main-banner.png" alt="" aria-hidden="true"></picture>
 				</div>
 			</section>
-
-
+			<section class="section-zero">
+				<div class="section-zero__container">
+					<picture><source srcset="img/banners/design-banner.webp" type="image/webp"><img class="img section-zero__img" src="img/banners/design-banner.png" alt="" aria-hidden="true"></picture>
+					<div class="section-zero__content">
+						<h2 class="h1 section-zero__h2">Zero Design</h2>
+						<p class="description section-zero__p">
+							Includes a total of 10 static pages, divided like this: 4 Landing pages, 2 About pages, 2 Contact page, 1 Team
+							page, 1
+							FAQ page. In addition to these, there are Webflow CMS driven pages: Blog (in 2 variations), Shop (in 2
+							variations),
+							Works and Careers. All with their respective single pages!
+						</p>
+						<div class="section-zero__label-block wrapp-labels">
+							<span class="fxd-label">
+								4 LANDING
+							</span>
+							<span class="fxd-label">
+								ABOUT
+							</span>
+							<span class="fxd-label">
+								CONTACT
+							</span>
+							<span class="fxd-label">
+								BLOG
+							</span>
+							<span class="fxd-label">
+								2 SHOP
+							</span>
+							<span class="fxd-label">
+								WORKS
+							</span>
+							<span class="fxd-label">
+								TEAM
+							</span>
+							<span class="fxd-label">
+								CAREERS
+							</span>
+							<span class="fxd-label">
+								FORMS
+							</span>
+							<span class="fxd-label">
+								UTILITY
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section-large-cards landing">
+				<div class="section-large-cards__container">
+					<h2 class="headline mb-60">
+						LANDING PAGES
+					</h2>
+					<div class="section-large-cards__wrapp">
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/landing-cards/card01.webp" type="image/webp"><img class="img" src="img/landing-cards/card01.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">Landing 1</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/landing-cards/card02.webp" type="image/webp"><img class="img" src="img/landing-cards/card02.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">Landing 2</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/landing-cards/card03.webp" type="image/webp"><img class="img" src="img/landing-cards/card03.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">Landing 3</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/landing-cards/card04.webp" type="image/webp"><img class="img" src="img/landing-cards/card04.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">Landing 4</h3>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section data-showmore data-showmore-media="768,max" class="section-mini-cards company">
+				<div class="section-mini-cards__container">
+					<h2 class="headline mb-60">
+						Company
+					</h2>
+					<div data-showmore-content="579" class="section-mini-cards__wrapp">
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/company-cards/card01.webp" type="image/webp"><img class="img" src="img/company-cards/card01.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">about 1</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/company-cards/card02.webp" type="image/webp"><img class="img" src="img/company-cards/card02.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">about 2</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/company-cards/card03.webp" type="image/webp"><img class="img" src="img/company-cards/card03.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">contact 1</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/company-cards/card04.webp" type="image/webp"><img class="img" src="img/company-cards/card04.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">contact 2</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/company-cards/card05.webp" type="image/webp"><img class="img" src="img/company-cards/card05.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">contact 3</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/company-cards/card06.webp" type="image/webp"><img class="img" src="img/company-cards/card06.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">team</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/company-cards/card07.webp" type="image/webp"><img class="img" src="img/company-cards/card07.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">faq</h3>
+							</div>
+						</article>
+					</div>
+					<button data-showmore-button type="button" class="button-headline"><span>Showmore</span><span>Hidden</span></button>
+				</div>
+			</section>
+			<section data-showmore data-showmore-media="768,max" class="section-large-cards cms">
+				<div class="section-large-cards__container">
+					<h2 class="headline mb-60">
+						CMS Pages
+					</h2>
+					<div data-showmore-content="520" class="section-large-cards__wrapp">
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/cms-cards/card01.webp" type="image/webp"><img class="img" src="img/cms-cards/card01.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">Works</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/cms-cards/card02.webp" type="image/webp"><img class="img" src="img/cms-cards/card02.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">blog 1</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/cms-cards/card03.webp" type="image/webp"><img class="img" src="img/cms-cards/card03.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">blog 2</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/cms-cards/card04.webp" type="image/webp"><img class="img" src="img/cms-cards/card04.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">blog 3</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/cms-cards/card05.webp" type="image/webp"><img class="img" src="img/cms-cards/card05.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">shop 1</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/cms-cards/card06.webp" type="image/webp"><img class="img" src="img/cms-cards/card06.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">shop 2</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/cms-cards/card07.webp" type="image/webp"><img class="img" src="img/cms-cards/card07.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">careers</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/cms-cards/card08.webp" type="image/webp"><img class="img" src="img/cms-cards/card08.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">single product page</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/cms-cards/card09.webp" type="image/webp"><img class="img" src="img/cms-cards/card09.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">Single post page</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/cms-cards/card10.webp" type="image/webp"><img class="img" src="img/cms-cards/card10.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">single careers page</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/cms-cards/card11.webp" type="image/webp"><img class="img" src="img/cms-cards/card11.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">Single work page</h3>
+							</div>
+						</article>
+					</div>
+					<button data-showmore-button type="button" class="button-headline"><span>Showmore</span><span>Hidden</span></button>
+				</div>
+			</section>
+			<section data-showmore data-showmore-media="768,max" class="section-mini-cards utility">
+				<div class="section-mini-cards__container">
+					<h2 class="headline mb-60">
+						Utility
+					</h2>
+					<div data-showmore-content="400" class="section-mini-cards__wrapp">
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/utility-cards/card01.webp" type="image/webp"><img class="img" src="img/utility-cards/card01.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">Coming soon</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/utility-cards/card02.webp" type="image/webp"><img class="img" src="img/utility-cards/card02.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">404</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/utility-cards/card03.webp" type="image/webp"><img class="img" src="img/utility-cards/card03.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">password</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/utility-cards/card04.webp" type="image/webp"><img class="img" src="img/utility-cards/card04.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">privacy policy</h3>
+							</div>
+						</article>
+						<article class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear">
+							<div class="card__wrapp">
+								<picture><source srcset="img/utility-cards/card05.webp" type="image/webp"><img class="img" src="img/utility-cards/card05.png" alt="" aria-hidden="true"></picture>
+								<h3 class="card__title">terms and condition</h3>
+							</div>
+						</article>
+					</div>
+					<button data-showmore-button type="button" class="button-headline"><span>Showmore</span><span>Hidden</span></button>
+				</div>
+			</section>
 		</main>
-		<footer class="footer">
-			<div class="footer__container">
-			</div>
-		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20220630175220"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20220701145211"></script>
+	<script src="js/app.min.js?_v=20220701145211"></script>
 </body>
 
 </html>
